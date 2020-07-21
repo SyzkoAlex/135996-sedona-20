@@ -65,114 +65,132 @@
             вам забыть о политике и экономике.
           </p>
         </header>
-        <div class="media-gallery__list">
-          <figure class="media-gallery__item">
-            <img
-              class="media-gallery__picture"
-              src="https://via.placeholder.com/280x280"
-              width="280"
-              height="280"
-              alt="Hеродные просторы"
-            />
-            <figcaption class="media-gallery__info">
-              <p class="media-gallery__title">Hеродные просторы</p>
-              <cite class="media-gallery__author">Автор фото: Борис</cite>
-              <div class="media-gallery__likes">1350</div>
-            </figcaption>
-          </figure>
-          <figure class="media-gallery__item">
-            <img
-              class="media-gallery__picture"
-              src="https://via.placeholder.com/280x280"
-              width="280"
-              height="280"
-              alt="Местная растительность"
-            />
-            <figcaption class="media-gallery__info">
-              <p class="media-gallery__title">Местная растительность</p>
-              <cite class="media-gallery__author">Автор фото: Борис</cite>
-              <div class="media-gallery__likes">1350</div>
-            </figcaption>
-          </figure>
-          <figure class="media-gallery__item">
-            <img
-              class="media-gallery__picture"
-              src="https://via.placeholder.com/280x280"
-              width="280"
-              height="280"
-              alt="Местная растительность"
-            />
-            <figcaption class="media-gallery__info">
-              <p class="media-gallery__title">Местная растительность</p>
-              <cite class="media-gallery__author">Автор фото: Сергей</cite>
-              <div class="media-gallery__likes">143</div>
-            </figcaption>
-          </figure>
-          <figure class="media-gallery__item">
-            <img
-              class="media-gallery__picture"
-              src="https://via.placeholder.com/280x280"
-              width="280"
-              height="280"
-              alt="Дорога на север"
-            />
-            <figcaption class="media-gallery__info">
-              <p class="media-gallery__title">Дорога на север</p>
-              <cite class="media-gallery__author">Автор фото: Петр</cite>
-              <div class="media-gallery__likes">96</div>
-            </figcaption>
-          </figure>
-          <figure class="media-gallery__item">
-            <img
-              class="media-gallery__picture"
-              src="https://via.placeholder.com/280x280"
-              width="280"
-              height="280"
-              alt="Дорога на север"
-            />
-            <figcaption class="media-gallery__info">
-              <p class="media-gallery__title">Мост дьявола</p>
-              <cite class="media-gallery__author">Автор фото: Антон</cite>
-              <div class="media-gallery__likes">254</div>
-            </figcaption>
-          </figure>
-        </div>
+        <ul class="media-gallery__list">
+          <li class="media-gallery__item">
+            <figure>
+              <img
+                class="media-gallery__picture"
+                src="https://via.placeholder.com/280x280"
+                width="280"
+                height="280"
+                alt="Hеродные просторы"
+              />
+              <figcaption class="media-gallery__info">
+                <p class="media-gallery__title">Hеродные просторы</p>
+                <cite class="media-gallery__author">Автор фото: Борис</cite>
+                <div class="media-gallery__likes">
+                  <button type="button" class="media-gallery__vote">
+                    <span class="visually-hidden">Голосовать</span>
+                  </button>
+                  1350
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="media-gallery__item">
+            <figure>
+              <img
+                class="media-gallery__picture"
+                src="https://via.placeholder.com/280x280"
+                width="280"
+                height="280"
+                alt="Местная растительность"
+              />
+              <figcaption class="media-gallery__info">
+                <p class="media-gallery__title">Местная растительность</p>
+                <cite class="media-gallery__author">Автор фото: Сергей</cite>
+                <div class="media-gallery__likes">
+                  <button type="button" class="media-gallery__vote">
+                    <span class="visually-hidden">Голосовать</span>
+                  </button>
+                  143
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="media-gallery__item">
+            <figure>
+              <img
+                class="media-gallery__picture"
+                src="https://via.placeholder.com/280x280"
+                width="280"
+                height="280"
+                alt="Дорога на север"
+              />
+              <figcaption class="media-gallery__info">
+                <p class="media-gallery__title">Дорога на север</p>
+                <cite class="media-gallery__author">Автор фото: Петр</cite>
+                <div class="media-gallery__likes">
+                  <button type="button" class="media-gallery__vote">
+                    <span class="visually-hidden">Голосовать</span>
+                  </button>
+                  96
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="media-gallery__item">
+            <figure>
+              <img
+                class="media-gallery__picture"
+                src="https://via.placeholder.com/280x280"
+                width="280"
+                height="280"
+                alt="Дорога на север"
+              />
+              <figcaption class="media-gallery__info">
+                <p class="media-gallery__title">Мост дьявола</p>
+                <cite class="media-gallery__author">Автор фото: Антон</cite>
+                <div class="media-gallery__likes">
+                  <button type="button" class="media-gallery__vote">
+                    <span class="visually-hidden">Голосовать</span>
+                  </button>
+                  254
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href="https://www.facebook.com/htmlacademy"
-              >Мы в Фейсбуке</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--instagram"
-              href="https://www.instagram.com/htmlacademy"
-              >Мы в Инстаграме</a
-            >
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            class="social__link social__link--vkontakte"
+            href="https://vk.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Вконтакте</span></a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            href="https://www.facebook.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Фейсбуке</span></a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--instagram"
+            href="https://www.instagram.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Инстаграме</span></a
+          >
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
-          >HTML Academy</a
-        >
+          ><img
+            class="copyright__picture"
+            src="https://via.placeholder.com/26.9x34.1"
+            width="26.9"
+            height="34.1"
+            alt="HTML Academy"
+          />
+        </a>
       </div>
     </footer>
   </body>
