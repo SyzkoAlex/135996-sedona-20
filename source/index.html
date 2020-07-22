@@ -1,12 +1,197 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="media.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="feedback.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/study">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo">
+        <img
+          src="https://via.placeholder.com/102x84"
+          width="101.7"
+          height="84"
+          alt="Город Седона"
+        />
+      </a>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Бронирование отелей в Седоне.
+      </h1>
+      <section class="intro">
+        <img
+          class="intro__slogan"
+          src="https://via.placeholder.com/282x214"
+          width="282"
+          height="214"
+          alt="Добро пожаловать в Седону"
+        />
+      </section>
+      <section class="reasons-to-visit">
+        <header class="reasons-to-visit__header">
+          <h2 class="reasons-to-visit__welcome">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="reasons-to-visit__difference">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </header>
+        <ul class="reasons-to-visit__list">
+          <li class="reasons-to-visit__item">
+            <div class="reasons-to-visit__info">
+              <h3 class="reasons-to-visit__statement">Настоящий городок</h3>
+              <p class="reasons-to-visit__order">— №1 —</p>
+              <p class="reasons-to-visit__description">
+                Cедона не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <img
+              class="reasons-to-visit__picture"
+              src="https://via.placeholder.com/320x260"
+              width="320"
+              height="260"
+              alt="Главная улица Седоны"
+            />
+            <ul class="benefit-list">
+              <li class="benefit-list__item benefit-list__item--house">
+                <h3 class="benefit-list__title">
+                  Жилье
+                </h3>
+                <p class="benefit-list__description">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="benefit-list__item benefit-list__item--gift">
+                <h3 class="benefit-list__title">
+                  Сувениры
+                </h3>
+                <p class="benefit-list__description">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+              <li class="benefit-list__item benefit-list__item--food">
+                <h3 class="benefit-list__title">
+                  Еда
+                </h3>
+                <p class="benefit-list__description">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="reasons-to-visit__item">
+            <div class="reasons-to-visit__info">
+              <h3 class="reasons-to-visit__statement">Там есть мост дьявола</h3>
+              <p class="reasons-to-visit__order">— №2 —</p>
+              <p class="reasons-to-visit__description">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+              </p>
+            </div>
+            <img
+              class="reasons-to-visit__picture"
+              src="https://via.placeholder.com/320x260"
+              width="320"
+              height="260"
+              alt="Мост дьявола"
+            />
+          </li>
+          <li class="reasons-to-visit__item">
+            <div class="reasons-to-visit__info">
+              <h3 class="reasons-to-visit__statement">Небольшая площадь</h3>
+              <p class="reasons-to-visit__order">— №3 —</p>
+              <p class="reasons-to-visit__description">
+                Все интересные места находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="reasons-to-visit__item">
+            <div class="reasons-to-visit__info">
+              <h3 class="reasons-to-visit__statement">Красивая дорога</h3>
+              <p class="reasons-to-visit__order">— №4 —</p>
+              <p class="reasons-to-visit__description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+          </li>
+          <li class="reasons-to-visit__item">
+            <div class="reasons-to-visit__info">
+              <h3 class="reasons-to-visit__statement">Мало туристов</h3>
+              <p class="reasons-to-visit__order">— №5 —</p>
+              <p class="reasons-to-visit__description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#visitsedona</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            class="social__link social__link--vkontakte"
+            href="https://vk.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Вконтакте</span></a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            href="https://www.facebook.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Фейсбуке</span></a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--instagram"
+            href="https://www.instagram.com/htmlacademy"
+            ><span class="visually-hidden">Мы в Инстаграме</span></a
+          >
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          ><img
+            class="copyright__picture"
+            src="https://via.placeholder.com/26.9x34.1"
+            width="26.9"
+            height="34.1"
+            alt="HTML Academy"
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
