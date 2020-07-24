@@ -1,0 +1,19 @@
+.intro {
+  display: flex;
+  height: 389px;
+
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+}
+
+.intro__slogan {
+  display: block;
+
+  width: 282px;
+  height: 214px;
+
+  margin: auto;
+  margin-top: 90px;
+}

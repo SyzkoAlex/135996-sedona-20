@@ -1,0 +1,43 @@
+.toogle-btn {
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  width: 22.9px;
+  height: 22px;
+
+  background-color: Transparent;
+
+  cursor: pointer;
+}
+
+.toogle-btn__cross {
+  fill: #fff;
+}
+
+.toogle-btn__menu {
+  fill: $main-blue;
+}
+
+.toogle-btn--open {
+  .toogle-btn__menu {
+    display: none;
+  }
+  .toogle-btn__cross {
+    display: block;
+  }
+}
+
+.toogle-btn--close {
+  .toogle-btn__menu {
+    display: block;
+  }
+  .toogle-btn__cross {
+    display: none;
+  }
+}
+
+
+
+

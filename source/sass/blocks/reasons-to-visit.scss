@@ -1,0 +1,66 @@
+.reasons-to-visit__header {
+  margin: 32px 20px 27px 20px;
+
+  text-align: center;
+}
+
+.reasons-to-visit__welcome {
+  margin: 0;
+  margin-bottom: 26px;
+
+  @include header-text;
+  line-height: 26px;
+}
+
+.reasons-to-visit__difference {
+  margin: 0;
+
+  @include description-text;
+  line-height: 26px;
+}
+
+.reasons-to-visit__list {
+  @include reset-ul;
+}
+
+.reasons-to-visit__info {
+  padding: 55px 20px 39px 20px;
+
+  background-color: $main-blue;
+
+  text-align: center;
+  @include inverted-text-color;
+
+  &--short {
+    background-color: #EEEEEE;
+    color: black;
+  }
+}
+
+.reasons-to-visit__statement {
+  margin: 0;
+
+  @include header-text;
+  line-height: 26px;
+}
+
+.reasons-to-visit__order {
+  margin: 12px auto;
+
+  @include description-text;
+  line-height: 21px;
+}
+
+.reasons-to-visit__description {
+  @include description-text;
+  line-height: 21px;
+}
+
+.reasons-to-visit__picture {
+  display: block;
+  width: 320px;
+  height: 260px;
+
+  margin-left: auto;
+  margin-right: auto;
+}

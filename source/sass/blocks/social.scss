@@ -1,0 +1,25 @@
+.social {
+  @include reset-ul;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 6px;
+
+  background-color: $main-blue;
+}
+
+.social__link {
+  display: flex;
+
+  width: 46px;
+  height: 48px;
+}
+
+.social__icon {
+  margin: auto;
+  fill: #fff;
+}
+

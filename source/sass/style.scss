@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/toggle-btn.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/reasons-to-visit.scss";
+@import "./blocks/benefit-list.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/page-footer.scss";
+
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  src:
+    url('../fonts/ptsans.woff2') format("woff2"),
+    url('../fonts/ptsans.woff') format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  src:
+    url('../fonts/ptsansbold.woff2') format("woff2"),
+    url('../fonts/ptsans.woff') format("woff");
+}
+
