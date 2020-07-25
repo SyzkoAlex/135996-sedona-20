@@ -1,0 +1,17 @@
+.feedback-header {
+  margin: 36px 20px 16px 20px;
+  text-align: center;
+}
+
+.feedback-header__title {
+  margin: 0;
+
+  @include header-text;
+}
+
+.feedback-header__hint {
+  margin: 26px 0;
+
+  @include description-text;
+  line-height: 24px;
+}
