@@ -21,6 +21,9 @@
 }
 
 .media-gallery__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include reset-ul;
 }
 

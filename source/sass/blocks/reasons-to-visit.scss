@@ -21,12 +21,11 @@
 
 .reasons-to-visit__list {
   @include reset-ul;
+  background-color: $main-blue;
 }
 
 .reasons-to-visit__info {
   padding: 55px 20px 39px 20px;
-
-  background-color: $main-blue;
 
   text-align: center;
   @include inverted-text-color;
@@ -63,4 +62,8 @@
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.reasons-to-visit__benefit-list {
+  background-color: #fff;
 }
