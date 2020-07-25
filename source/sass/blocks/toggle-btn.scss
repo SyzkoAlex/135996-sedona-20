@@ -7,13 +7,13 @@
   width: 22.9px;
   height: 22px;
 
-  background-color: Transparent;
+  background-color: transparent;
 
   cursor: pointer;
 }
 
 .toogle-btn__cross {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .toogle-btn__menu {
@@ -24,6 +24,7 @@
   .toogle-btn__menu {
     display: none;
   }
+
   .toogle-btn__cross {
     display: block;
   }
@@ -33,6 +34,7 @@
   .toogle-btn__menu {
     display: block;
   }
+
   .toogle-btn__cross {
     display: none;
   }

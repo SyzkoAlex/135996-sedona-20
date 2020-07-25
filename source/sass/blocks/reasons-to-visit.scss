@@ -28,10 +28,11 @@
   padding: 55px 20px 39px 20px;
 
   text-align: center;
+
   @include inverted-text-color;
 
   &--short {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     color: black;
   }
 }
@@ -65,5 +66,5 @@
 }
 
 .reasons-to-visit__benefit-list {
-  background-color: #fff;
+  background-color: #ffffff;
 }
