@@ -4,8 +4,12 @@
 
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
   background-size: auto;
+
+  &--short {
+    height: 158px;
+  }
 }
 
 .intro__slogan {
@@ -16,4 +20,13 @@
 
   margin: auto;
   margin-top: 90px;
+
+  &--short {
+    width: 229px;
+    height: 39px;
+
+    margin-top: 52px;
+  }
 }
+
+
