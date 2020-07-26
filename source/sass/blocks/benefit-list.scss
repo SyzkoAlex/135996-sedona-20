@@ -25,15 +25,15 @@
   margin: 0;
 
   @include header-text;
-  line-height: 40px;
 }
 
 .benefit-list__description {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 20px;
 
   @include description-text;
-  line-height: 21px;
+
+  color: #333333;
 }
 
 .benefit-list__icon {

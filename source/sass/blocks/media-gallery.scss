@@ -18,6 +18,8 @@
 
   @include description-text;
   line-height: 24px;
+
+  color: #333333;
 }
 
 .media-gallery__list {
@@ -54,20 +56,24 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+
+  color: #333333;
 }
 
 .media-gallery__likes {
   display: flex;
 
+  margin-top: 13px;
+
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 24px;
 }
 
 .media-gallery__vote {
   width: 23px;
-  height: 40px;
+  height: 24px;
   padding: 0;
   margin-right: 14px;
 

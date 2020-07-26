@@ -9,11 +9,11 @@
   margin-bottom: 26px;
 
   @include header-text;
-  line-height: 26px;
 }
 
 .reasons-to-visit__difference {
   margin: 0;
+  color: #333333;
 
   @include description-text;
   line-height: 26px;
@@ -41,19 +41,24 @@
   margin: 0;
 
   @include header-text;
-  line-height: 26px;
 }
 
 .reasons-to-visit__order {
   margin: 12px auto;
 
   @include description-text;
-  line-height: 21px;
+
+  &--short {
+    color: #333333;
+  }
 }
 
 .reasons-to-visit__description {
   @include description-text;
-  line-height: 21px;
+
+  &--short {
+    color: #333333;
+  }
 }
 
 .reasons-to-visit__picture {

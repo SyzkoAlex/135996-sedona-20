@@ -1,13 +1,13 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
   display: block;
 
   @include description-text;
-  line-height: 48px;
 }
 
 .copyright__link {
