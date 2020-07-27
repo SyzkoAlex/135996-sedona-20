@@ -1,0 +1,29 @@
+.site-list {
+  @include reset-ul;
+
+  display: flex;
+  flex-direction: column;
+
+  background: $main-blue;
+}
+
+.site-list__item {
+  display: block;
+
+  height: 55px;
+
+  text-align: center;
+}
+
+.site-list__link {
+  @include header-text;
+  @include inverted-text-color;
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  line-height: 40px;
+
+  text-decoration: none;
+}

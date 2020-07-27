@@ -1,0 +1,41 @@
+.benefit-list {
+  @include reset-ul;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 9px;
+  padding-bottom: 22px;
+  margin: auto 0;
+}
+
+.benefit-list__item {
+  padding: 13px 20px;
+  display: flex;
+}
+
+.benefit-list__icon-wrapper {
+  width: 40px;
+}
+
+.benefit-list__info {
+  margin-left: 12px;
+}
+
+.benefit-list__title {
+  margin: 0;
+
+  @include header-text;
+}
+
+.benefit-list__description {
+  margin: 0;
+  margin-top: 20px;
+
+  @include description-text;
+
+  color: #333333;
+}
+
+.benefit-list__icon {
+  fill: $main-blue;
+}
