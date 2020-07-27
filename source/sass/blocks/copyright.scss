@@ -8,6 +8,7 @@
   display: block;
 
   @include description-text;
+  line-height: 26px;
 }
 
 .copyright__link {
