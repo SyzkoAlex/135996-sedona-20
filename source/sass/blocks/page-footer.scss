@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 38.5px 0 26px 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
@@ -24,7 +24,7 @@
 .page-footer__social {
   margin-top: 33.5px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -32,7 +32,7 @@
 .page-footer__copyright {
   margin-top: 30px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
