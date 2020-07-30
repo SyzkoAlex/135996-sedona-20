@@ -2,10 +2,17 @@
   display: flex;
   height: 389px;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: auto;
+
+  @media (min-width: $tablet-width){
+    height: 518px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+  }
+
+
 
   &--short {
     height: 158px;
@@ -20,6 +27,12 @@
 
   margin: auto;
   margin-top: 90px;
+
+  @media (min-width: $tablet-width){
+    width: 461px;
+    height: 349.97px;
+    margin-top: 77px;
+  }
 
   &--short {
     width: 229px;
