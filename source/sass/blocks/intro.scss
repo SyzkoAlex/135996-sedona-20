@@ -12,10 +12,13 @@
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
   }
 
+}
 
+.intro--short {
+  height: 158px;
 
-  &--short {
-    height: 158px;
+  @media (min-width: $tablet-width){
+    height: 290px;
   }
 }
 
@@ -33,11 +36,20 @@
     height: 349.97px;
     margin-top: 77px;
   }
+}
 
-  &--short {
-    width: 229px;
-    height: 39px;
+.intro__slogan--short {
+  width: 229px;
+  height: 39px;
 
-    margin-top: 52px;
+  margin-top: 52px;
+
+  @media (min-width: $tablet-width){
+    width: 456.9px;
+    height: 77.6px;
+
+    margin-top: 95px;
   }
 }
+
+

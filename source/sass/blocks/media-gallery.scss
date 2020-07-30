@@ -1,20 +1,32 @@
-.media-gallery {
-  padding-top: 31px;
-}
 
 .media-gallery__header {
-  margin: 0 20px;
+  margin: 31px 20px 20px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    @include header-text(30px);
+    margin: 59px auto;
+    max-width: 458px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 101px auto 61px;
+  }
 }
 
 .media-gallery__title {
   margin: 0;
 
   @include header-text;
+
+  @media (min-width: $tablet-width) {
+    @include header-text(30px);
+  }
 }
 
 .media-gallery__hint {
-  margin: 26px 0;
+  margin: 26px 0 0;
 
   @include description-text;
   line-height: 24px;
@@ -23,15 +35,41 @@
 }
 
 .media-gallery__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @include reset-ul;
+
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .media-gallery__item {
   padding: 22px 20px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.media-gallery__item--long {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 3;
+  }
 }
 
 .media-gallery__figure {
@@ -39,9 +77,33 @@
 }
 
 .media-gallery__picture {
-  width: 280px;
-  height: 280px;
-  margin-bottom: 11px;
+  display: block;
+  object-fit: cover;
+}
+
+.media-gallery__info {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+
+  margin: 0;
+  padding-top: 11px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff;
+  }
 }
 
 .media-gallery__picture-name {
@@ -58,6 +120,10 @@
   line-height: 24px;
 
   color: #333333;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .media-gallery__likes {
@@ -69,6 +135,10 @@
   font-size: 14px;
   text-transform: uppercase;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+  }
 }
 
 .media-gallery__vote {
@@ -85,4 +155,8 @@
 
 .media-gallery__hand {
   fill: #b2b2b2;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+  }
 }
