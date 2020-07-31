@@ -1,8 +1,8 @@
-@mixin header-text {
+@mixin header-text($fontSize: 18px, $lineHeight: 26px) {
   font-weight: bold;
-  font-size: 18px;
+  font-size: $fontSize;
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: $lineHeight;
 }
 
 @mixin description-text {

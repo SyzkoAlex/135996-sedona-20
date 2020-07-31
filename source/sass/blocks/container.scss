@@ -1,0 +1,8 @@
+.container {
+  max-width: $desktop-width;
+  min-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+
+  box-shadow: 0 0 40px 0 #dbdbdb;
+}
