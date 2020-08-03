@@ -5,11 +5,11 @@
   line-height: $lineHeight;
 }
 
-@mixin description-text {
+@mixin description-text($lineHeight: 21px) {
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 21px;
+  line-height: $lineHeight;
 }
 
 @mixin inverted-text-color {

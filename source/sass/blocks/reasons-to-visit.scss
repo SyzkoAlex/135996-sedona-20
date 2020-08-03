@@ -1,6 +1,4 @@
 .reasons-to-visit__header {
-  box-sizing: border-box;
-
   margin: 32px auto 11px auto;
   text-align: center;
 
@@ -27,6 +25,10 @@
 
   @media (min-width: $tablet-width) {
     @include header-text(21px);
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -34,8 +36,7 @@
   margin: 0;
   color: #333333;
 
-  @include description-text;
-  line-height: 26px;
+  @include description-text(26px);
 }
 
 .reasons-to-visit__list {
@@ -57,8 +58,12 @@
   }
 }
 
+.reasons-to-visit__item--short {
+  background-color: #eeeeee;
+  padding: 0 20px;
+}
+
 .reasons-to-visit__info {
-  box-sizing: border-box;
   display: flex;
 
   padding: 40px 20px;
@@ -72,17 +77,26 @@
 
   @include inverted-text-color;
   text-align: center;
+}
 
-  &--short {
-    background-color: #eeeeee;
-    color: black;
+.reasons-to-visit__item--short .reasons-to-visit__info {
+  margin: 0 auto;
+  padding: 25px 0;
+  max-width: 320px;
 
-    padding: 25px 20px;
+  background-color: #eeeeee;
+  color: black;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid #D6D6D6;
   }
 }
 
+.reasons-to-visit__item--short:last-child .reasons-to-visit__info {
+  border-bottom: none;
+}
+
 .reasons-to-visit__text-wrapper {
-  box-sizing: border-box;
   margin: auto;
   max-width: 290px;
 }
@@ -92,8 +106,15 @@
 
   @include header-text;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     @include header-text(21px);
+    br {
+      display: block;
+    }
   }
 }
 
@@ -101,18 +122,19 @@
   margin: 12px auto;
 
   @include description-text;
+}
 
-  &--short {
-    color: #333333;
-  }
+.reasons-to-visit__item--short .reasons-to-visit__order {
+  color: #333333;
 }
 
 .reasons-to-visit__description {
+  margin: 0;;
   @include description-text;
+}
 
-  &--short {
-    color: #333333;
-  }
+.reasons-to-visit__item--short .reasons-to-visit__description {
+  color: #333333;
 }
 
 .reasons-to-visit__picture {
@@ -122,24 +144,34 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
+    background-size: auto;
     grid-column: span 2;
   }
 }
 
 .reasons-to-visit__picture--city {
-  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-image: url("../img/main-city-tablet@1x.jpg");
+
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-position: center right;
     background-image: url("../img/main-city-desktop@1x.jpg");
+    background-position: center right;
   }
 }
 
 .reasons-to-visit__picture--bridge {
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-image: url("../img/main-bridge-tablet@1x.jpg");
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-position: center right;

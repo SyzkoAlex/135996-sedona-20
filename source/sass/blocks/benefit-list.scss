@@ -1,5 +1,8 @@
 .benefit-list {
   @include reset-ul;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   padding-top: 9px;
   padding-bottom: 22px;
@@ -12,15 +15,17 @@
 }
 
 .benefit-list__item {
-  box-sizing: border-box;
   padding: 13px 20px;
   display: flex;
+
+  max-width: 400px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    max-width: auto;
     min-height: 330px;
     text-align: center;
   }
@@ -41,7 +46,6 @@
 }
 
 .benefit-list__info {
-  box-sizing: border-box;
   margin-left: 12px;
 
   @media (min-width: $tablet-width) {

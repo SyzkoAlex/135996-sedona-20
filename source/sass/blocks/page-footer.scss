@@ -36,3 +36,15 @@
     margin: 0;
   }
 }
+
+.copyright__logo {
+  outline: none;
+  fill: #000000;
+
+  &:hover {
+    fill: $main-blue;
+  }
+  &:active {
+    fill: rgba(#000000, 0.3);
+  }
+}

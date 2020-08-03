@@ -9,6 +9,13 @@
   margin-right: 6px;
 
   background-color: $main-blue;
+
+  &:hover {
+    background-color: $main-blue-deep;
+  }
+  &:active {
+    background-color: $main-blue-dark;
+  }
 }
 
 .social__link {
@@ -21,4 +28,8 @@
 .social__icon {
   margin: auto;
   fill: #ffffff;
+
+  &:active {
+    fill: rgba(#ffffff, 0.3);
+  }
 }

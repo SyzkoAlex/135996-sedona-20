@@ -3,8 +3,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-
     @include header-text(30px);
     margin: 59px auto;
     max-width: 458px;
@@ -28,8 +26,7 @@
 .media-gallery__hint {
   margin: 26px 0 0;
 
-  @include description-text;
-  line-height: 24px;
+  @include description-text(24px);
 
   color: #333333;
 }
@@ -82,7 +79,6 @@
 }
 
 .media-gallery__info {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 

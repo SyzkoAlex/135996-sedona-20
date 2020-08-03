@@ -12,6 +12,5 @@
 .feedback-header__hint {
   margin: 26px 0;
 
-  @include description-text;
-  line-height: 24px;
+  @include description-text(24px);
 }
