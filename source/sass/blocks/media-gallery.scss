@@ -2,13 +2,13 @@
   margin: 31px 20px 20px 20px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     @include header-text(30px);
     margin: 59px auto;
     max-width: 458px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     margin: 101px auto 61px;
   }
 }
@@ -18,7 +18,7 @@
 
   @include header-text;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     @include header-text(30px);
   }
 }
@@ -37,13 +37,13 @@
   margin: 0 auto;
   width: 320px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     width: 648px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -54,17 +54,17 @@
 
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     padding: 0;
   }
 }
 
 .media-gallery__item--long {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     grid-column: span 2;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     grid-column: span 3;
   }
 }
@@ -86,14 +86,14 @@
   padding-top: 11px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     background-color: #f2f2f2;
     flex-direction: row;
     align-items: center;
     padding: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     position: absolute;
     bottom: 0;
 
@@ -117,7 +117,7 @@
 
   color: #333333;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     color: #ffffff;
   }
 }
@@ -132,7 +132,7 @@
   text-transform: uppercase;
   line-height: 24px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width + px) {
     margin: 0 0 0 auto;
   }
 }
@@ -152,7 +152,7 @@
 .media-gallery__hand {
   fill: #b2b2b2;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width + px) {
     fill: #ffffff;
   }
 }

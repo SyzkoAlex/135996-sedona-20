@@ -9,7 +9,7 @@
   <body class="page__body">
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -25,8 +25,26 @@
               </a>
             </li>
             <li class="main-nav__item main-nav__item--logo">
-              <a class="main-nav__logo">
-                <img src="img/logo-sedona-mobile.svg" alt="Логитип Седоны" />
+              <a>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/logo-sedona-mobile.svg"
+                  />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="img/logo-sedona-tablet.svg"
+                  />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <img
+                    class="main-nav__logo"
+                    src="img/logo-sedona-desktop.png"
+                    alt="Логитип Седоны"
+                  />
+                </picture>
               </a>
             </li>
             <li class="main-nav__item">
@@ -64,12 +82,12 @@
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
           </header>
+          <div class="decor-triangle reasons-to-visit__decor-triangle"></div>
           <ul class="reasons-to-visit__list">
             <li class="reasons-to-visit__item reasons-to-visit__item--full">
               <div
-                class="decor-triangle reasons-to-visit__decor-triangle"
-              ></div>
-              <div class="reasons-to-visit__info">
+                class="reasons-to-visit__info reasons-to-visit__info--decorated"
+              >
                 <div class="reasons-to-visit__text-wrapper">
                   <h3 class="reasons-to-visit__statement">
                     Настоящий<br />
@@ -144,7 +162,6 @@
                       width="32px"
                       height="38px"
                       viewBox="0 0 63 75.084"
-                      enable-background="new 0 0 63 75.084"
                       xml:space="preserve"
                     >
                       <path
@@ -152,12 +169,13 @@
                       />
                     </svg>
                   </div>
-                  <div class="benefit-list__info">
+                  <div class="benefit-list__info benefit-list__info--gifts">
                     <h3 class="benefit-list__title">
                       Сувениры
                     </h3>
                     <p class="benefit-list__description">
-                      Не только китайского, но и местного производства!
+                      Не только китайского,<br />
+                      но и местного производства!
                     </p>
                   </div>
                 </li>
@@ -193,7 +211,7 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="benefit-list__info">
+                  <div class="benefit-list__info benefit-list__info--food">
                     <h3 class="benefit-list__title">Еда</h3>
                     <p class="benefit-list__description">
                       Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -203,7 +221,9 @@
               </ul>
             </li>
             <li class="reasons-to-visit__item reasons-to-visit__item--full">
-              <div class="reasons-to-visit__info">
+              <div
+                class="reasons-to-visit__info reasons-to-visit__info--second"
+              >
                 <div class="reasons-to-visit__text-wrapper">
                   <h3 class="reasons-to-visit__statement">
                     Там есть<br />
@@ -246,7 +266,11 @@
                     — №4 —
                   </p>
                   <p class="reasons-to-visit__description">
-                    Ехать в Седону из Лас-Вегаса совсем не скучно!
+                    Ехать в Седону из<br />
+                    Лас-Вегаса совсем<br
+                      class="reasons-to-visit__new-line--desktop"
+                    />
+                    не скучно!
                   </p>
                 </div>
               </div>
@@ -262,7 +286,9 @@
                     — №5 —
                   </p>
                   <p class="reasons-to-visit__description">
-                    Большинство едет в Гранд Каньон и толпится там
+                    Большинство едет в<br />
+                    Гранд Каньон и<br />
+                    толпится там
                   </p>
                 </div>
               </div>
@@ -273,8 +299,8 @@
           <header class="booking__header">
             <h2 class="booking__title">Заинтересовались?</h2>
             <p class="booking__description">
-              Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-              предложения гостиниц в седоне
+              Укажите предполагаемые даты поездки,<br />
+              и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
           </header>
           <button class="booking__button">

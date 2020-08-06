@@ -6,7 +6,7 @@
 }
 
 .social__item {
-  margin-right: 6px;
+  margin-right: 7px;
 
   background-color: $main-blue;
 
@@ -17,6 +17,10 @@
   &:active {
     background-color: $main-blue-dark;
   }
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
