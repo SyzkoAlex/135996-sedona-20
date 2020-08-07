@@ -25,7 +25,25 @@
             </li>
             <li class="main-nav__item main-nav__item--logo">
               <a class="main-nav__logo">
-                <img src="img/logo-sedona-mobile.svg" alt="Логитип Седоны" />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/logo-sedona-mobile.svg"
+                  />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="img/logo-sedona-tablet.svg"
+                  />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <img
+                    class="main-nav__logo"
+                    src="img/logo-sedona-desktop.png"
+                    alt="Логитип Седоны"
+                  />
+                </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
