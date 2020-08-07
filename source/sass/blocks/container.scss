@@ -1,6 +1,6 @@
 .container {
-  max-width: $desktop-width;
-  min-width: $mobile-width;
+  max-width: $desktop-width + px;
+  min-width: $mobile-width + px;
   margin: 0 auto;
   padding: 0;
 

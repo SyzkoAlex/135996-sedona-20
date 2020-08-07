@@ -1,0 +1,87 @@
+.booking {
+  margin: 33px auto 49px auto;
+  text-align: center;
+
+  max-width: 456px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width + px) {
+    margin: 58px auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width + px) {
+    margin: 58px auto 66px auto;
+  }
+}
+
+.booking__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include header-text(21px);
+
+  @media (min-width: $tablet-width + px) {
+    @include header-text(30px);
+    margin-bottom: 34px;
+  }
+}
+
+.booking__description {
+  margin: 0;
+  color: #333333;
+
+  @include description-text(24px);
+}
+
+.booking__description br {
+  display: none;
+
+  @media (min-width: $tablet-width + px) {
+    display: block;
+  }
+}
+
+.booking__button {
+  width: 100%;
+  height: 58px;
+
+  margin-top: 28px;
+
+  border: none;
+  outline: none;
+
+  background-color: $main-blue;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width + px) {
+    margin-top: 36px;
+  }
+
+  @media (min-width: $desktop-width + px) {
+    margin-top: 41px;
+  }
+
+  &:hover {
+    background-color: $main-blue-deep;
+  }
+
+  &:active {
+    background-color: $main-blue-dark;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: default;
+  }
+}
+
+.booking__action {
+  @include header-text(21px);
+  @include inverted-text-color;
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}

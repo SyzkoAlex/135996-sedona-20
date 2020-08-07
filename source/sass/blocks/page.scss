@@ -1,5 +1,12 @@
 .page__body {
   font-family: "PT Sans", "Arial", sans-serif;
-
   margin: 0;
+}
+
+button,
+select,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
