@@ -79,6 +79,7 @@
   @media (min-width: $tablet-width + px) {
     max-width: 157px;
   }
+
   @media (min-width: $desktop-width + px) {
     max-width: 302px;
   }
@@ -88,6 +89,7 @@
   @media (min-width: $tablet-width + px) {
     max-width: 192px;
   }
+
   @media (min-width: $desktop-width + px) {
     max-width: 302px;
   }
@@ -97,7 +99,7 @@
   display: none;
 
   @media (min-width: $desktop-width + px) {
-   display: block;
+    display: block;
   }
 }
 

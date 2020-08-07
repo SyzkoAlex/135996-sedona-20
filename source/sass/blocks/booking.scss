@@ -55,11 +55,11 @@
 
   cursor: pointer;
 
-  @media (min-width:  $tablet-width + px) {
+  @media (min-width: $tablet-width + px) {
     margin-top: 36px;
   }
 
-  @media (min-width:  $desktop-width + px) {
+  @media (min-width: $desktop-width + px) {
     margin-top: 41px;
   }
 

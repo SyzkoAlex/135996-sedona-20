@@ -79,7 +79,7 @@
   box-shadow: none;
   z-index: 1;
 
-  @media (max-width:  $tablet-width - 1px) {
+  @media (max-width: $tablet-width - 1px) {
     order: 1;
   }
 
@@ -217,7 +217,7 @@
     display: block;
   }
 
-  .main-nav--nojs .main-nav__item{
+  .main-nav--nojs .main-nav__item {
     display: block;
   }
 }
