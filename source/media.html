@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -25,7 +26,25 @@
             </li>
             <li class="main-nav__item main-nav__item--logo">
               <a class="main-nav__logo">
-                <img src="img/logo-sedona-mobile.svg" alt="Логитип Седоны" />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/logo-sedona-mobile.svg"
+                  />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="img/logo-sedona-tablet.svg"
+                  />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <img
+                    class="main-nav__logo"
+                    src="img/logo-sedona-desktop.png"
+                    alt="Логитип Седоны"
+                  />
+                </picture>
               </a>
             </li>
             <li class="main-nav__item">
@@ -49,8 +68,6 @@
           <img
             class="intro__slogan intro__slogan--short"
             src="img/text-sedona.svg"
-            width="320"
-            height="214"
             alt="Седона"
           />
         </section>
@@ -69,11 +86,11 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 767px)"
                     srcset="img/photo-sunset-mobile@1x.jpg"
                   />
                   <source
-                    media="(max-width: 1200px)"
+                    media="(max-width: 1199px)"
                     srcset="img/photo-sunset-tablet@1x.jpg"
                   />
                   <img
@@ -122,7 +139,7 @@
                         </g>
                       </svg>
                     </button>
-                    1350
+                    <span class="media-gallery__counter">1350</span>
                   </div>
                 </figcaption>
               </figure>
@@ -131,11 +148,11 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 767px)"
                     srcset="img/photo-cactus-mobile@1x.jpg"
                   />
                   <source
-                    media="(max-width: 1200px)"
+                    media="(max-width: 1199px)"
                     srcset="img/photo-cactus-tablet@1x.jpg"
                   />
                   <img
@@ -188,7 +205,7 @@
                         </g>
                       </svg>
                     </button>
-                    143
+                    <span class="media-gallery__counter">143</span>
                   </div>
                 </figcaption>
               </figure>
@@ -197,11 +214,11 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 767px)"
                     srcset="img/photo-roads-mobile@1x.jpg"
                   />
                   <source
-                    media="(max-width: 1200px)"
+                    media="(max-width: 1199px)"
                     srcset="img/photo-roads-tablet@1x.jpg"
                   />
                   <img
@@ -250,7 +267,7 @@
                         </g>
                       </svg>
                     </button>
-                    96
+                    <span class="media-gallery__counter">96</span>
                   </div>
                 </figcaption>
               </figure>
@@ -259,11 +276,11 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 767px)"
                     srcset="img/photo-bridge-mobile@1x.jpg"
                   />
                   <source
-                    media="(max-width: 1200px)"
+                    media="(max-width: 1199px)"
                     srcset="img/photo-bridge-tablet@1x.jpg"
                   />
                   <img
@@ -312,12 +329,13 @@
                         </g>
                       </svg>
                     </button>
-                    254
+                    <span class="media-gallery__counter"> 254</span>
                   </div>
                 </figcaption>
               </figure>
             </li>
           </ul>
+          <div class="media-gallery__video"></div>
         </section>
       </main>
       <footer class="page-footer">

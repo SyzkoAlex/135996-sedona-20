@@ -21,6 +21,10 @@
   @media (min-width: $tablet-width + px) {
     height: 290px;
   }
+
+  @media (min-width: $desktop-width + px) {
+    height: 301px;
+  }
 }
 
 .intro__slogan {
@@ -50,5 +54,9 @@
     height: 77.6px;
 
     margin-top: 95px;
+  }
+
+  @media (min-width: $desktop-width + px) {
+    margin-top: 102px;
   }
 }
