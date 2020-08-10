@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
@@ -27,20 +28,16 @@
               <a class="main-nav__logo">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/logo-sedona-mobile.svg"
-                  />
-                  <source
-                    media="(max-width: 1279px)"
-                    srcset="img/logo-sedona-tablet.svg"
-                  />
-                  <source
-                    media="(min-width: 1280px)"
+                    media="(min-width: 1200px)"
                     srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/logo-sedona-tablet.svg"
                   />
                   <img
                     class="main-nav__logo"
-                    src="img/logo-sedona-desktop.png"
+                    src="img/logo-sedona-mobile.svg"
                     alt="Логитип Седоны"
                   />
                 </picture>
@@ -344,5 +341,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>

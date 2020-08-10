@@ -28,20 +28,16 @@
               <a class="main-nav__logo">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/logo-sedona-mobile.svg"
-                  />
-                  <source
-                    media="(max-width: 1279px)"
-                    srcset="img/logo-sedona-tablet.svg"
-                  />
-                  <source
-                    media="(min-width: 1280px)"
+                    media="(min-width: 1200px)"
                     srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/logo-sedona-tablet.svg"
                   />
                   <img
                     class="main-nav__logo"
-                    src="img/logo-sedona-desktop.png"
+                    src="img/logo-sedona-mobile.svg"
                     alt="Логитип Седоны"
                   />
                 </picture>
@@ -86,17 +82,24 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/photo-sunset-mobile@1x.jpg"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-sunset-desktop@1x.jpg,
+                      img/photo-sunset-desktop@2x.jpg 2x
+                    "
                   />
                   <source
-                    media="(max-width: 1199px)"
-                    srcset="img/photo-sunset-tablet@1x.jpg"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-sunset-tablet@1x.jpg,
+                      img/photo-sunset-tablet@2x.jpg 2x
+                    "
                   />
                   <img
                     class="media-gallery__picture"
-                    src="img/photo-sunset-desktop@1x.jpg"
+                    src="img/photo-sunset-mobile@1x.jpg"
                     alt="Закат в Аризоне"
+                    srcset="img/photo-sunset-mobile@2x.jpg 2x"
                   />
                 </picture>
                 <figcaption class="media-gallery__info">
@@ -148,17 +151,24 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/photo-cactus-mobile@1x.jpg"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-cactus-desktop@1x.jpg,
+                      img/photo-cactus-desktop@2x.jpg 2x
+                    "
                   />
                   <source
-                    media="(max-width: 1199px)"
-                    srcset="img/photo-cactus-tablet@1x.jpg"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-cactus-tablet@1x.jpg,
+                      img/photo-cactus-tablet@2x.jpg 2x
+                    "
                   />
                   <img
                     class="media-gallery__picture"
-                    src="img/photo-cactus-desktop@1x.jpg"
+                    src="img/photo-cactus-mobile@1x.jpg"
                     alt="Кактус цветет"
+                    srcset="img/photo-cactus-mobile@2x.jpg 2x"
                   />
                 </picture>
                 <figcaption class="media-gallery__info">
@@ -214,17 +224,24 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/photo-roads-mobile@1x.jpg"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-roads-desktop@1x.jpg,
+                      img/photo-roads-desktop@2x.jpg 2x
+                    "
                   />
                   <source
-                    media="(max-width: 1199px)"
-                    srcset="img/photo-roads-tablet@1x.jpg"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-roads-tablet@1x.jpg,
+                      img/photo-roads-tablet@2x.jpg 2x
+                    "
                   />
                   <img
                     class="media-gallery__picture"
-                    src="img/photo-roads-desktop@1x.jpg"
+                    src="img/photo-roads-mobile@1x.jpg"
                     alt="Дорога на север"
+                    srcset="img/photo-roads-mobile@2x.jpg 2x"
                   />
                 </picture>
                 <figcaption class="media-gallery__info">
@@ -276,17 +293,24 @@
               <figure class="media-gallery__figure">
                 <picture>
                   <source
-                    media="(max-width: 767px)"
-                    srcset="img/photo-bridge-mobile@1x.jpg"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-bridge-desktop@1x.jpg,
+                      img/photo-bridge-desktop@2x.jpg 2x
+                    "
                   />
                   <source
-                    media="(max-width: 1199px)"
-                    srcset="img/photo-bridge-tablet@1x.jpg"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-bridge-tablet@1x.jpg,
+                      img/photo-bridge-tablet@2x.jpg 2x
+                    "
                   />
                   <img
                     class="media-gallery__picture"
-                    src="img/photo-bridge-desktop@1x.jpg"
+                    src="img/photo-bridge-mobile@1x.jpg"
                     alt="Мост дьявола"
+                    srcset="img/photo-bridge-mobile@2x.jpg 2x"
                   />
                 </picture>
                 <figcaption class="media-gallery__info">
