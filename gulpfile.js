@@ -13,6 +13,8 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const posthtml = require("gulp-posthtml");
 const posthtmlInclude = require("posthtml-include");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 const sourcePath = "source";
 const buildPath = "build";
@@ -75,10 +77,22 @@ const makeHtml = () => {
   return gulp
     .src(`${sourcePath}/*.html`)
     .pipe(posthtml(config))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(buildPath));
 };
 
 exports.html = makeHtml;
+
+const makeJs = () => {
+  return gulp
+    .src(`${sourcePath}/js/app.js`)
+    .pipe(uglify())
+    .pipe(rename("app.min.js"))
+    .pipe(gulp.dest(`${buildPath}/js`))
+    .pipe(sync.stream());
+};
+
+exports.js = makeJs;
 
 const copy = () => {
   return gulp
@@ -86,7 +100,6 @@ const copy = () => {
       [
         `${sourcePath}/fonts/**/*.{woff,woff2}`,
         `${sourcePath}/img/**`,
-        `${sourcePath}/js/**`,
         `${sourcePath}/*.ico`,
       ],
       { base: sourcePath }
@@ -127,6 +140,7 @@ const build = gulp.series(
   clean,
   copy,
   makeStyles,
+  makeJs,
   optimizeImages,
   makeSvgSprite,
   makeHtml
